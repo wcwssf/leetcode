@@ -1,4 +1,4 @@
-package com.sam.wang.leetcode;
+package com.practice.leetcode;
 
 /**
  * @author wang wei chao
