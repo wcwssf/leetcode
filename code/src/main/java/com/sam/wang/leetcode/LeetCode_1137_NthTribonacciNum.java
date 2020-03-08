@@ -1,12 +1,12 @@
 package com.sam.wang.leetcode;
 
 /**
- * @author: wangweichao@qiyi.com
+ * @author: wang wei chao
  * @description: 第n个泰波那契数
  * @date: 2020/3/8 11:01 上午
  * @version: 1.0.0
  */
-public class LeetCode_1137 {
+public class LeetCode_1137_NthTribonacciNum {
 
     public static void main(String[] args) {
         int tribonacci = tribonacci(10);
