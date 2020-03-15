@@ -11,8 +11,8 @@ import java.util.Arrays;
 public class LeetCode_300_LargestIncreasingSubSequence {
 
     public static void main(String[] args) {
-        int[] nums = new int[]{10, 9, 2, 5, 3, 7, 101, 18};
-        System.out.println(lengthOfLIS(nums));
+        int[] nums = new int[]{10, 9, 2, 5, 3, 7, 101, 18, 27};
+        System.out.println(lengthOfLISThree(nums));
     }
 
     /**
@@ -68,6 +68,34 @@ public class LeetCode_300_LargestIncreasingSubSequence {
                     // 重新赋值
                     dp[index] = Math.max(dp[index], dp[dpIndex] + 1);
                     max = Math.max(max, dp[index]);
+                }
+            }
+        }
+        return max;
+    }
+
+    /**
+     * 二分查找&复用参数数组
+     *
+     * @param nums
+     * @return
+     */
+    public static int lengthOfLISThree(int[] nums) {
+        if (nums == null || nums.length == 0) {
+            return 0;
+        }
+        int max = 0;
+        int cur = 0;
+        int idx = 0;
+        for (int index = 0, len = nums.length; index < len; index++) {
+            if (index < 1 || nums[index] > nums[max - 1]) {
+                nums[max] = nums[index];
+                max++;
+            } else {
+                idx = Arrays.binarySearch(nums, 0, max, nums[index]);
+                if (idx < 0) {
+                    idx = -(idx + 1);
+                    nums[idx] = nums[index];
                 }
             }
         }
