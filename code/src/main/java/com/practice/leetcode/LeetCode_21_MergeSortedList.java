@@ -43,12 +43,18 @@ public class LeetCode_21_MergeSortedList {
     }
 
 
-    public class ListNode {
+    public static class ListNode {
         int val;
         ListNode next;
 
-        ListNode(int x) {
+        public ListNode(int x) {
             val = x;
+        }
+    }
+
+    public static void print(ListNode node) {
+        while (node != null) {
+            System.out.print(node.val + " ");
         }
     }
 }
