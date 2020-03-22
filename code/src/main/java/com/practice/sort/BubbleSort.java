@@ -11,7 +11,7 @@ public class BubbleSort {
     public static void main(String[] args) {
         int[] nums = new int[]{89, 13, 12, 45, 9, 72, 34, 88, 13, 5, 289};
         bubbleSort(nums);
-        PrintUtils.print(nums);
+        SortUtils.print(nums);
     }
 
     /**
@@ -25,7 +25,7 @@ public class BubbleSort {
             boolean moveFlag = true;
             for (int j = 0; j < nums.length - 1 - i; j++) {
                 if (nums[j] > nums[j + 1]) {
-                    swap(nums, j, j + 1);
+                    SortUtils.swap(nums, j, j + 1);
                     moveFlag = false;
                 }
             }
@@ -33,11 +33,5 @@ public class BubbleSort {
                 break;
             }
         }
-    }
-
-    private static void swap(int[] nums, int from, int to) {
-        int temp = nums[from];
-        nums[from] = nums[to];
-        nums[to] = temp;
     }
 }

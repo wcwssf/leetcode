@@ -11,7 +11,7 @@ public class HeapSort {
     public static void main(String[] args) {
         int[] nums = new int[]{89, 239, 12, 45, 9, 323, 88, 13, 5, 289};
         heapSort(nums);
-        PrintUtils.print(nums);
+        SortUtils.print(nums);
     }
 
     /**
