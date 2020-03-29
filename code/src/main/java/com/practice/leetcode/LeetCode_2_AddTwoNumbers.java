@@ -1,5 +1,7 @@
 package com.practice.leetcode;
 
+import com.practice.common.ListNode;
+
 /**
  * @author: wang wei chao
  * @description: 两数相加
@@ -110,14 +112,5 @@ public class LeetCode_2_AddTwoNumbers {
             node = node.next;
         }
         return res;
-    }
-
-    public static class ListNode {
-        int val;
-        LeetCode_2_AddTwoNumbers.ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
     }
 }

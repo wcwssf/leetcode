@@ -1,6 +1,7 @@
 package com.practice.leetcode;
 
-import com.practice.leetcode.LeetCode_21_MergeSortedList.ListNode;
+
+import com.practice.common.ListNode;
 
 /**
  * @author: wang wei chao

@@ -1,6 +1,7 @@
 package com.practice.leetcode;
 
-import com.practice.leetcode.LeetCode_21_MergeSortedList.ListNode;
+import com.practice.common.ListNode;
+import com.practice.util.PrintUtils;
 
 /**
  * @author: wang wei chao
@@ -20,7 +21,7 @@ public class LeetCode_61_RoateList {
             i++;
         }
         ListNode res = rotateRight(head.next, 4);
-        LeetCode_21_MergeSortedList.print(res);
+        PrintUtils.printLinkedNode(res);
     }
 
     public static ListNode rotateRight(ListNode head, int k) {

@@ -1,5 +1,7 @@
 package com.practice.leetcode;
 
+import com.practice.common.ListNode;
+
 /**
  * @author: wang wei chao
  * @description: merge two sorted list
@@ -7,6 +9,7 @@ package com.practice.leetcode;
  * @version: 1.0.0
  */
 public class LeetCode_21_MergeSortedList {
+
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         if (l1 == null) {
             return l2;
@@ -40,21 +43,5 @@ public class LeetCode_21_MergeSortedList {
             cur.next = l2;
         }
         return res.next;
-    }
-
-
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        public ListNode(int x) {
-            val = x;
-        }
-    }
-
-    public static void print(ListNode node) {
-        while (node != null) {
-            System.out.print(node.val + " ");
-        }
     }
 }
