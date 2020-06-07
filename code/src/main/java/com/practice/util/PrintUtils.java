@@ -53,4 +53,15 @@ public class PrintUtils {
 
         }
     }
+
+    /**
+     * 打印数组
+     *
+     * @param array
+     */
+    public static <T> void printArray(T[] array) {
+        for (Object o : array) {
+            System.out.print(o + " ");
+        }
+    }
 }
