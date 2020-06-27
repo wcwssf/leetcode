@@ -2,6 +2,7 @@ package com.practice.bfs;
 
 
 import com.practice.common.TreeNode;
+import org.openjdk.jol.info.ClassLayout;
 
 import java.util.Stack;
 
@@ -14,6 +15,11 @@ import java.util.Stack;
 public class LeetCode_101_SymmetricTree {
 
     public static void main(String[] args) {
+        LeetCode_101_SymmetricTree symmetricTree = new LeetCode_101_SymmetricTree();
+        System.out.println(ClassLayout.parseInstance(symmetricTree).toPrintable());
+        synchronized (symmetricTree){
+            System.out.println(ClassLayout.parseInstance(symmetricTree).toPrintable());
+        }
         TreeNode root = new TreeNode(1);
         TreeNode node = root;
         node.left = new TreeNode(2);

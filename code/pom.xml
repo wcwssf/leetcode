@@ -21,6 +21,13 @@
         <artifactId>leet-code</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+    <dependencies>
+        <dependency>
+            <groupId>org.openjdk.jol</groupId>
+            <artifactId>jol-core</artifactId>
+            <version>0.9</version>
+        </dependency>
+    </dependencies>
 
     <artifactId>code</artifactId>
     <packaging>jar</packaging>
